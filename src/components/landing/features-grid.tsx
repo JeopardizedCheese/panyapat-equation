@@ -7,7 +7,7 @@ const features = [
   {
     icon: Sparkles,
     title: "Event Tracking",
-    description: "Log life's ups and downs with customizable impact ratings from 1-20.",
+    description: "Log life ups and downs with customizable impact ratings from 1-20.",
     gradient: "from-purple-500 to-pink-500",
   },
   {
