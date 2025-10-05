@@ -77,7 +77,7 @@ export function StatusCard({
           }`}>
             {directBalance > 0 ? "+" : ""}{directBalance.toFixed(1)}
           </p>
-          <p className="text-xs text-gray-500 mt-1">Your G's - M's</p>
+          <p className="text-xs text-gray-500 mt-1">Your Gs - Ms</p> {/**ESLint rule is unreal what the hell */}
         </div>
 
         {/* Network Effect */}

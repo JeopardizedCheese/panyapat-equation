@@ -63,7 +63,8 @@ export function LifeGraph({ events, friends }: LifeGraphProps) {
     return data
   }, [events, friends])
 
-  // Custom dot for events
+  // Custom dot for events (I hate you TypeScript screw it)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const CustomDot = (props: any) => {
     const { cx, cy, payload } = props
     if (!payload.eventType) return null

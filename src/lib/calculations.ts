@@ -1,4 +1,3 @@
-import { stat } from "fs";
 import type {
     LifeEvent,
     Friend,
@@ -186,16 +185,16 @@ export function calculateRatio(events: LifeEvent[]) : RatioStatus {
     let warning: string | null = null;
 
     if (ratio < 1.0) {
-        isHealthy = false,
+        isHealthy = false;
         warning = "Blimey, you lucky bastard! I CANT HAVE THAT!"
     } else if (ratio > 3.0) {
-        isHealthy = false,
+        isHealthy = false;
         warning = "Damn.. I am sorry to hear that."
     } else if (ratio > 2.5) {
-        isHealthy = true,
+        isHealthy = true;
         warning = "Something good might happen! Hang in there."
     } else if (ratio < 1.5) {
-        isHealthy = true,
+        isHealthy = true;
         warning = "Have fun while your good fortune lasts."
     }
 
